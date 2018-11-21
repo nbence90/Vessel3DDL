@@ -1,0 +1,21 @@
+envvessel has been created
+
+(envvessel)  ✘ bence@bencelaptop  /media/bence/Elements/Databases/VESSEL12/Vessel3DDL/scripts   master  python2 LearnDictionary/ExtractPatches.py 
+
+ERROR: ImportError: No module named patches_3d
+SOLED: mappákból a scripteket kimáosltam mert keverdtek a hardcodeolt elérési utak
+
+ERROR: Exception: PyQtGraph requires one of PyQt4, PyQt5 or PySide; none of these packages could be imported.
+SOLUTION: easy_install PySide
+
+ERROR: can't file filpath VESSEL12_01-05
+SOLUTION: i had to rename the tar gz extracted VESSEL12_01-05
+    and move the mhd and raw files outside
+
+
+szét kellett bontani a fájlokat
+
+1-5
+6-10
+11-15
+16-20

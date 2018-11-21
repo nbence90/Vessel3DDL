@@ -10,8 +10,8 @@ The number of threads is hardcoded
 
 import pickle
 import sys
-sys.path.append('../')
-sys.path.append('../utils')
+sys.path.append('./')
+sys.path.append('./utils')
 import config
 from VolumesToXy import apply_filters, serialize_xy
 from multiprocessing.dummy import Pool as ThreadPool

@@ -12,9 +12,11 @@ At higher scales the extracted number of patches is lower.
 import numpy as np
 import pickle
 import sys
-sys.path.append('../')
+# sys.path.append('../')
+sys.path.append('./')
 import config
-sys.path.append('../utils')
+# sys.path.append('../utils')
+sys.path.append('./utils')
 import patches_3d as p
 import pyramids_3d as pyr
 import HelpFunctions as HLP
