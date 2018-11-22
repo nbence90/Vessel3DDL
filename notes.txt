@@ -19,3 +19,12 @@ szét kellett bontani a fájlokat
 6-10
 11-15
 16-20
+
+filter:23 Volume:2 scale:1
+upscaling+convolution time:25.058480978
+Total time:
+1816.38916183
+Saved: ../../Data/Serialized/saved_xy/Parallel/300iter_24atoms_5bs_1a_5es_100000patches_5ps_20stacks_X_0.pkl                         
+Saved: ../../Data/Serialized/saved_xy/Parallel/300iter_24atoms_5bs_1a_5es_100000patches_5ps_20stacks_y_0.pkl
+
+

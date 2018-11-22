@@ -57,13 +57,14 @@ def read_parameters():
     # 3. Feature map extraction #########################################
 
     param.paths2volumes, param.paths2masks, param.paths2annotations = get_annotated_v_and_m_paths(param.path2examples)
-    param.numOfVolumes = 3
+    #param.numOfVolumes = 3
+    param.numOfVolumes = 1
     param.sliceNum = (459, 448, 418)
     param.dim = ((459, 512, 512), (448, 512, 512), (418, 512, 512))
     param.anno = load_annotations(param.path2examples, param.paths2annotations)  # Read the annotations in csv format
     param.clfS    = 2  # Scales to use for the classifier
     param.fMapS   = 2  # num of scales used to create the feature maps
-    param.threads = 4  # the more memory you have the higher it can be
+    param.threads = 1  # the more memory you have the higher it can be
     # 4. Training the classifier
     param.classifiers = {  # C=1
         'CV_Logit_newton_L2': LogisticRegressionCV(penalty='l2', solver='newton-cg', n_jobs=1, max_iter=300),
