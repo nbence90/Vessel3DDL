@@ -10,7 +10,9 @@ import sys
 from sklearn.externals import joblib
 from sklearn.utils import shuffle
 sys.path.append('../')
-sys.path.append('../utils')
+#sys.path.append('../utils')
+sys.path.append('./utils/')
+
 import config
 from VolumesToXy import read_xy
 

@@ -15,9 +15,10 @@ import numpy as np
 from scipy import ndimage as nd
 import scipy
 import time
-sys.path.append('../')
+#sys.path.append('../')
 import config
-sys.path.append('../utils')
+#sys.path.append('../utils')
+sys.path.append('./utils/')
 import HelpFunctions as HLP
 import pyramids_3d as pyr
 

@@ -10,7 +10,8 @@ import pickle
 import sys
 sys.path.append('../')
 import config as C
-sys.path.append('../utils')
+#sys.path.append('../utils')
+sys.path.append('./utils/')
 from VolumesToXy import serialize_xy
 
 

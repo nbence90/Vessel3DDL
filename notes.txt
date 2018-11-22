@@ -28,3 +28,19 @@ Saved: ../../Data/Serialized/saved_xy/Parallel/300iter_24atoms_5bs_1a_5es_100000
 Saved: ../../Data/Serialized/saved_xy/Parallel/300iter_24atoms_5bs_1a_5es_100000patches_5ps_20stacks_y_0.pkl
 
 
+ERROR:
+  File "ConcatenateXy.py", line 14, in <module>
+    from VolumesToXy import serialize_xy
+ImportError: No module named VolumesToXy
+
+SOLUTION: 
+instead ../utils
+import ./utils/
+
+python UseClassifier.py
+122
+123
+124
+1328.49392104
+Done
+
