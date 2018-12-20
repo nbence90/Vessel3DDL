@@ -36,6 +36,9 @@ The entire processing pipeline for the VESSEL12 data is set up in the config.py 
 * Some additional functionality: 3d patch extraction, 3d Gaussian pyramids, loading/saving data.
 The dictionaries and classifier weights are serialized in the ./Data/Serialized directory.
 
+### Preprocessing
+IRCAD 20 liver transformed to the above structure
+
 ### LearnDictionary
 Execute the scripts in following order: <br />
 1. ExtractPatches.py <br />
