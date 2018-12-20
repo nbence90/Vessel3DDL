@@ -19,15 +19,15 @@ def read_parameters():
         pass
     param = Params()
     # 0. Paths to data and serialization
-    param.path            = '../../Data/'
-    param.path2examples   = '../../Data/VESSEL12/VESSEL12_ExampleScans/'
-    param.path2patches    = '../../Data/Serialized/saved_patches/'
-    param.path2dicts      = '../../Data/Serialized/saved_dicts/'
-    param.path2Xy_temp    = '../../Data/Serialized/saved_xy/Parallel/'
-    param.path2Xy         = '../../Data/Serialized/saved_xy/'
-    param.path2classifier = '../../Data/Serialized/saved_classifiers/'
-    param.path2Measures   = '../../Data/Serialized/saved_measures/'
-    param.path2Output     = '../../Data/Serialized/Output/'
+    param.path            = '../../DataLiver/'
+    param.path2examples   = '../../DataLiver/VESSEL12/VESSEL12_ExampleScans/'
+    param.path2patches    = '../../DataLiver/Serialized/saved_patches/'
+    param.path2dicts      = '../../DataLiver/Serialized/saved_dicts/'
+    param.path2Xy_temp    = '../../DataLiver/Serialized/saved_xy/Parallel/'
+    param.path2Xy         = '../../DataLiver/Serialized/saved_xy/'
+    param.path2classifier = '../../DataLiver/Serialized/saved_classifiers/'
+    param.path2Measures   = '../../DataLiver/Serialized/saved_measures/'
+    param.path2Output     = '../../DataLiver/Serialized/Output/'
     # create the paths if they don't exist
     create_paths([param.path2patches, param.path2dicts, param.path2Xy_temp,
                  param.path2Xy, param.path2classifier, param.path2Measures, param.path2Output])
@@ -91,11 +91,11 @@ def get_v_and_m_paths(path):
     paths2volumes.append(path+'VESSEL12/VESSEL12_01-05/VESSEL12_04.raw')
     paths2volumes.append(path+'VESSEL12/VESSEL12_01-05/VESSEL12_05.raw')
 
-    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_Lungmasks/VESSEL12_01.raw')
-    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_Lungmasks/VESSEL12_02.raw')
-    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_Lungmasks/VESSEL12_03.raw')
-    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_Lungmasks/VESSEL12_04.raw')
-    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_Lungmasks/VESSEL12_05.raw')
+    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_organmasks/VESSEL12_01.raw')
+    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_organmasks/VESSEL12_02.raw')
+    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_organmasks/VESSEL12_03.raw')
+    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_organmasks/VESSEL12_04.raw')
+    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_organmasks/VESSEL12_05.raw')
     
     # Scans: VESSEL12_06-10
     paths2volumes.append(path+'VESSEL12/VESSEL12_06-10/VESSEL12_06.raw')
@@ -104,11 +104,11 @@ def get_v_and_m_paths(path):
     paths2volumes.append(path+'VESSEL12/VESSEL12_06-10/VESSEL12_09.raw')
     paths2volumes.append(path+'VESSEL12/VESSEL12_06-10/VESSEL12_10.raw')
 
-    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_Lungmasks/VESSEL12_06.raw')
-    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_Lungmasks/VESSEL12_07.raw')
-    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_Lungmasks/VESSEL12_08.raw')
-    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_Lungmasks/VESSEL12_09.raw')
-    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_Lungmasks/VESSEL12_10.raw')
+    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_organmasks/VESSEL12_06.raw')
+    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_organmasks/VESSEL12_07.raw')
+    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_organmasks/VESSEL12_08.raw')
+    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_organmasks/VESSEL12_09.raw')
+    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_organmasks/VESSEL12_10.raw')
     
     # Scans: VESSEL12_11-15
     paths2volumes.append(path+'VESSEL12/VESSEL12_11-15/VESSEL12_11.raw')
@@ -117,11 +117,11 @@ def get_v_and_m_paths(path):
     paths2volumes.append(path+'VESSEL12/VESSEL12_11-15/VESSEL12_14.raw')
     paths2volumes.append(path+'VESSEL12/VESSEL12_11-15/VESSEL12_15.raw')
 
-    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_Lungmasks/VESSEL12_11.raw')
-    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_Lungmasks/VESSEL12_12.raw')
-    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_Lungmasks/VESSEL12_13.raw')
-    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_Lungmasks/VESSEL12_14.raw')
-    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_Lungmasks/VESSEL12_15.raw')
+    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_organmasks/VESSEL12_11.raw')
+    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_organmasks/VESSEL12_12.raw')
+    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_organmasks/VESSEL12_13.raw')
+    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_organmasks/VESSEL12_14.raw')
+    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_organmasks/VESSEL12_15.raw')
 
     # Scans: VESSEL12_16-20
     paths2volumes.append(path+'VESSEL12/VESSEL12_16-20/VESSEL12_16.raw')
@@ -130,11 +130,11 @@ def get_v_and_m_paths(path):
     paths2volumes.append(path+'VESSEL12/VESSEL12_16-20/VESSEL12_19.raw')
     paths2volumes.append(path+'VESSEL12/VESSEL12_16-20/VESSEL12_20.raw')
 
-    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_Lungmasks/VESSEL12_16.raw')
-    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_Lungmasks/VESSEL12_17.raw')
-    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_Lungmasks/VESSEL12_18.raw')
-    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_Lungmasks/VESSEL12_19.raw')
-    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_Lungmasks/VESSEL12_20.raw')
+    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_organmasks/VESSEL12_16.raw')
+    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_organmasks/VESSEL12_17.raw')
+    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_organmasks/VESSEL12_18.raw')
+    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_organmasks/VESSEL12_19.raw')
+    paths2masks.append(path+'VESSEL12/VESSEL12_01-20_organmasks/VESSEL12_20.raw')
     return paths2volumes, paths2masks
 
 
@@ -143,15 +143,15 @@ def get_annotated_v_and_m_paths(path):
     paths2masks = []
     paths2annotations = []
     paths2volumes.append(path+'Scans/VESSEL12_21.raw')
-    paths2masks.append(path+'Lungmasks/VESSEL12_21.raw')
+    paths2masks.append(path+'organmasks/VESSEL12_21.raw')
     paths2annotations.append('Annotations/VESSEL12_21_Annotations.csv')
     
     paths2volumes.append(path+'Scans/VESSEL12_22.raw')
-    paths2masks.append(path+'Lungmasks/VESSEL12_22.raw')
+    paths2masks.append(path+'organmasks/VESSEL12_22.raw')
     paths2annotations.append('Annotations/VESSEL12_22_Annotations.csv')
 
     paths2volumes.append(path+'Scans/VESSEL12_23.raw')
-    paths2masks.append(path+'Lungmasks/VESSEL12_23.raw')
+    paths2masks.append(path+'organmasks/VESSEL12_23.raw')
     paths2annotations.append('Annotations/VESSEL12_23_Annotations.csv')
     return paths2volumes, paths2masks, paths2annotations
 
